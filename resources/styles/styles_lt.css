@@ -156,6 +156,16 @@ ocultatx
 ocultamn
 hifen_ano
 */
+
+.chanfrado{
+    width: 200px;
+    height: 200px;
+    background-color: white; 
+    border: 5px solid #3498db;
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    box-sizing: border-box; 
+}
+
 .aluno{}
 .professor{}
 .url_para_encurta{}
@@ -455,24 +465,137 @@ p0tit6negativo
 }
 .p0tit1{
     font-size: var(--peso1);
+    background: var(--apoio1A);
+    color: var(--fiscor1B);
+    max-width: max-content;
+    padding: 0.2em 0.5em;
+    line-height: 1.2em;
 }
-.p0tit1numpv{}
-.p0tit1pv{}
+.p0tit1numpv{
+    font-family: var(--pvnum);
+    font-size:3.2em;
+    width: 90px;
+    height:90px ;
+    background-color:var(--fiscor2A);
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    box-sizing: border-box; 
+    text-align: center;
+    align-self: center;
+    color:var(--branco);
+    padding:0.7em 0 0 0;
+    box-shadow: 10px 10px 3px rgb(255, 255, 255);
+}
+.p0tit1pv{
+    font-family: var(--pvnum);
+   background: var(--preto);
+   color: var(--branco);
+   font-weight: bold;
+   font-size: 0.8em;
+   max-width: max-content;
+   padding: 0.2em 0.8em;
+}
+
 
 
 .p0tit2{
     font-size: var(--peso2);
+    background: var(--apoio1A);
+    color: var(--fiscor1B);
+    max-width: max-content;
+    padding: 0.2em 0.5em ;
 }
-.p0tit2numpv{}
-.p0tit2pv{}
+.p0tit2numpv{
+    font-family: var(--pvnum);
+    font-size:3.2em;
+    width: 90px;
+    height:90px ;
+    background-color:var(--fiscor2A);
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    box-sizing: border-box; 
+    text-align: center;
+    align-self: center;
+    color:var(--branco);
+    padding:0.7em 0 0 0;
+}
+.d0tit2::after{
+    background: url(../images/pv_numcaptop.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width:39px ;
+    height:30px ;
+    position: absolute;
+    margin:-34px 0 0 91px;
+    z-index: 20;
+}
+.d0tit2::before{
+    background: url(../images/pv_numcapbottom.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width:35px ;
+    height:36px ;
+    position: absolute;
+    margin:95px 0 0 -70px;
+    z-index: 20;
+}
+.p0tit2pv{
+    font-family: var(--pvnum);
+   background: var(--preto);
+   color: var(--branco);
+   font-weight: bold;
+   font-size: 0.8em;
+   max-width: max-content;
+   padding: 0.2em 0.8em;
+  
+}
+.p0tit2pv::before{
+background: url(../images/pv_capitulo_a.svg) no-repeat;
+background-size: 100%;
+content: '';
+width:14px ;
+height:7px ;
+position: absolute;
+margin: 0 0 0 -18px;
 
+}
+.p0tit2pv::after{
+    background: url(../images/pv_capitulo_b.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width:14px ;
+    height:28px ;
+    position: absolute;
+    margin: -10px 0 0 9px;
+    
+    }
 
 .p0tit3{
     font-size: var(--peso3);
+    color: var(--fiscor1B);
+    margin: 1em 0 0.5em 1.5em;
+}
+.p0tit3::before{
+background: url(../images/pv_p0tit3.svg) no-repeat;
+background-size: 100%;
+content: '';
+width:30px ;
+height:24px ;
+position: absolute;
+margin:8px 0 0 -32px ;
 }
 .p0tit4{
     font-size: var(--peso4);
+    color: var(--fiscor1A);
+    margin: 1em 0 0.5em 1em;
 }
+.p0tit4::before{
+    background: url(../images/pv_p0tit4.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width:10px ;
+    height:10px ;
+    position: absolute;
+    margin:0.6em 0 0 -12px ;
+    }
 .p0tit5{
     font-size: var(--peso5);
 }
@@ -2030,12 +2153,37 @@ d0selotema
 .d0bgbranco{
     background: var(--branco);
 }
-.d0boxabertura{}
-.d0boxabertura2{}
+.d0boxabertura{
+    background: url(../images/bg_abertura.svg) top left no-repeat;
+    background-size: cover;
+}
+.d0boxabertura2{
+    background: url(../images/bg_abertura.svg) top right no-repeat;
+    background-size: cover;
+}
 .d0imgabertura{}
-.d0tit1{}
-.d0tit2{}
-.d0boxaberturatit{}
+.d0tit1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.d0tit2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.d0boxaberturatit{
+    background: url(../images/pv_aberturacap.svg) top left no-repeat;
+    background-size: 100%;
+    background-position-y: -70px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0 0.5em 0;
+    padding: 2em 2em 2em 2em;
+}
 .d0materiaistit{}
 .d0secatividade{}
 .d0secatividadetit{}
@@ -2522,8 +2670,17 @@ o0pronunciation 👉 Especifico de inglês
 .o0secconheca3{}
 .o0secapresentacao{}
 .o0aberturabox{}
-.o0aberturaatvbox{}
-.o0aberturaobjbox{}
+.o0aberturaatvbox{
+    background: var(--laranja4);
+   /*👉 clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);👈*/
+    padding: 1em;
+    max-width: max-content;
+}
+.o0aberturaobjbox{
+    background: var(--branco);
+    padding: 1em;
+    max-width: max-content;
+}
 .o0aberturalegenda{}
 .o0aberturaimgmini{}
 .o0secrespostas{}

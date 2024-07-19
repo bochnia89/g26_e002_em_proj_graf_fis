@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="36" viewBox="0 0 35 36">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_32" data-name="Retângulo 32" width="35" height="36" transform="translate(1335 315)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="pv_numbottom" transform="translate(-1335 -315)" clip-path="url(#clip-path)">
+    <path id="Caminho_421" data-name="Caminho 421" d="M120.472-120.473h7.087v-7.086h-7.087Zm0-7.086M106.3-120.473v7.086H99.212v7.086H92.126v-7.086h7.086v-7.086H28.346L7.087-99.211v63.777h7.086v7.087H7.087v14.175H0v7.086H7.087v-7.086h7.086v7.086H21.26v-7.086H35.433v7.086H99.212l21.26-21.261V-106.3h7.087v-7.086H113.386v-7.086Zm0,14.172h7.087v7.09H106.3ZM21.26,0h7.087V-7.086H21.26Z" transform="translate(1335 349.638)" fill="#ff602d"/>
+    <rect id="Retângulo_34" data-name="Retângulo 34" width="8" height="8" transform="translate(1342 314)" fill="#fff"/>
+    <rect id="Retângulo_35" data-name="Retângulo 35" width="8" height="8" transform="translate(1342 335)" fill="#fff"/>
+    <rect id="Retângulo_36" data-name="Retângulo 36" width="14" height="8" transform="translate(1356 335)" fill="#fff"/>
+  </g>
+</svg>
