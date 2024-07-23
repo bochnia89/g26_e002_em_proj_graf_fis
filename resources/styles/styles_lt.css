@@ -693,7 +693,17 @@ p1graficotit
 o2graficogravata1
 o2graficogravata2
 */
-.p1graficotit{}
+.p1graficotit{
+  background: url(../images/pv_grafico.svg) top left no-repeat;
+  background-size: contain;
+  border: 1px solid var(--preto);
+  font-family: var(--titulo);
+  font-weight: bold;
+  padding: 0.2em 0.5em 0.2em 1.5em;
+  max-width: 100%;
+  display: table-caption;
+  caption-side: top;
+}
 .o2graficogravata1{}
 .o2graficogravata2{}
 
@@ -798,20 +808,88 @@ p1sec10tit4
 .p1sec1tit4{}
 
 .p1sec2tit1{
-    background: var(--apoio2B);
+    background: var(--apoio2A);
     max-width: max-content;
     padding: 0.2em 1em;
 }
+.p1sec2tit1::before{
+background: url(../images/pv_sec2_1.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 20px;
+height:20px ;
+position: absolute;
+margin:6px 0 0 -38px;
+}
+.p1sec2tit1::after{
+    background: url(../images/pv_sec2_2.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 22px;
+    height:40px ;
+    position: absolute;
+    margin:-13px 0 0 15px;
+    }
 .p1sec2tit2{}
 .p1sec2tit3{}
 .p1sec2tit4{}
 
-.p1sec3tit1{}
+.p1sec3tit1{
+    background: var(--fiscor1A);
+    padding: 0.2em 0em 0.2em 1em;
+    max-width: max-content;
+    color: var(--branco);
+}
+.p1sec3tit1>span{
+    background: var(--apoio1B);
+    color: var(--preto);
+    padding:  0.4em 0.8em;
+    margin: 0 0 0 0.5em;
+}
+.p1sec3tit1::before{
+background: url(../images/pv_sec3_1.svg) no-repeat;
+background-size: 100%;
+content: '';
+width:20px ;
+height:20px ;
+position: absolute;
+margin: 6px 0 0 -38px;
+}
+.p1sec3tit1::after{
+    background: url(../images/pv_sec3_2.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width:30px ;
+    height:43px ;
+    position: absolute;
+    margin: -13px 0 0 -10px;
+    }
+
 .p1sec3tit2{}
 .p1sec3tit3{}
 .p1sec3tit4{}
 
-.p1sec4tit1{}
+.p1sec4tit1{
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+.p1sec4tit1 span{
+    background: var(--roxo2);
+    box-shadow: 4px 4px 0 var(--roxo1);
+    padding: 0.4em;
+
+}
+.p1sec4tit1 span:first-child{
+    background: var(--apoio1A);
+    box-shadow: 4px 4px 0 var(--apoio1C);
+    padding: 0.4em;
+ 
+}
+.p1sec4tit1 span:last-child{
+    background: var(--azul3);
+    box-shadow: 4px 4px 0 var(--azul1);
+    padding: 0.4em;
+}
 .p1sec4tit2{}
 .p1sec4tit3{}
 .p1sec4tit4{}
@@ -1409,6 +1487,7 @@ p2atvsomatoriacont
 
 .p2atv{
     margin: 0.5em 0 0.5em 30px;
+    
 }
 .p2atvcont{
     margin: 0.5em 0 0.5em 30px;
@@ -1512,7 +1591,7 @@ ul.p2atvletrasubitem{
 }
 ul.p2atvletrasubitem li::before{
     content: '•';
-    color: var(--verde1);
+    color: var(--apoio4B);
     font-size: 1.2em;
     width: 10px;
     height: 10px;
@@ -1524,7 +1603,7 @@ p.p2atvletrasubitem{
 }
 p.p2atvletrasubitem::before {
     content: ''; /*content: '•';*/
-    color: var(--verde1);
+    color: var(--apoio4B);
     font-size: 1.2em;
     width: 10px;
     height: 10px;
@@ -2031,7 +2110,7 @@ p5marcadorcaixa3negativo
 p5marcadorquestao
 */
 .p5marcador{
-    background: var(--preto);
+    background: var(--fiscor1B);
     font-family: var(--texto);
     color: var(--branco);
     font-weight: bold;
@@ -2384,6 +2463,7 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
     position: absolute;
     margin: 0 0 0 -30px;
     text-align: center;
+    color: var(--apoio4B);
 }
 .c0destaqueletracitacao{
     font-weight: bold;
@@ -2400,6 +2480,7 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
     position: absolute;
     margin: 0 0 0 -30px;
     text-align: center;
+    color: var(--apoio4B);
 }
 .c0destaquenumerocitacao{
     font-weight: bold;
@@ -2417,7 +2498,7 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
     text-align: right;
 }
 .c0destaquequestaonumero{
-    color: var(--verde1);
+    color: var(--apoio4B);
     font-family: var(--titulo);
     font-weight: bold;
 }
@@ -2608,11 +2689,11 @@ c4textotachado
 }
 .c4linhalacunaresposta{}
 .c4vocabulariodestaque{
-    border-bottom: 2px solid var(--verde1);
+    color: var(--apoio2C);
     font-weight: bold;
 }
 .c4vocabulariodestaqueitalico{
-    border-bottom: 2px solid var(--verde1);
+    color: var(--apoio2C);
     font-weight: bold;
     font-style: italic;
 }
@@ -2784,21 +2865,63 @@ o0pronunciation 👉 Especifico de inglês
     width: 176px;
     height:15px ;
     position: absolute;
-    margin:40px 0 0 36%;
+    margin:40px 0 0 26%;
 
     }
 
 .o0sec2{
     margin: 1em 0;
-    border-left: 2px solid var(--apoio2B);
-    border-bottom: 2px solid var(--apoio2B);
+    border-left: 2px solid var(--apoio2A);
+    border-bottom: 2px solid var(--apoio2A);
     border-radius: 0 0 0 1em;
 }
 .o0sec2>.box{
     padding: 1em;
 }
-.o0sec3{}
-.o0sec4{}
+.o0sec2::after{
+background: url(../images/pv_sec2.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 50px   ;
+height:10px ;
+position: absolute;
+margin:0 0 0 42% ;
+}
+.o0sec3{
+    border-bottom: 2px solid var(--fiscor1A);
+    border-left: 2px solid var(--fiscor1A);
+    border-radius: 0 0 0 1em;
+}
+.o0sec3::after{
+background: url(../images/pv_atividaderesolvidas.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 48px ;
+height: 10px;
+position: absolute;
+margin: 0 0 0 42% ;
+}
+.o0sec3>.box{
+    margin: 1em;
+}
+.o0sec4{
+    background: var(--laranja4);
+    padding: 2em;
+    margin: 1em 0;
+}
+.o0sec4>.box{
+    background:
+    url(../images/bg_sec4_canto1.svg) top left no-repeat,
+    url(../images/bg_sec4_canto2.svg) top right no-repeat,
+    url(../images/bg_sec4_canto3.svg) bottom right no-repeat, 
+    url(../images/bg_sec4_canto4.svg) bottom left no-repeat,
+    url(../images/bg_abalateralesquerdasec4.svg) top left no-repeat,
+    url(../images/bg_abalateraldireitasec4.svg) top right no-repeat  var(--branco);
+    background-size:25px, 25px, 25px, 25px, 23px, 23px ;
+    padding: 2em 2.5em;
+    height: 600px;
+    background-position-y:top, top, bottom, bottom, 30%, 80% ;
+}
 .o0sec5{}
 .o0sec6{}  
 .o0sec7{}
@@ -2845,7 +2968,46 @@ o0pronunciation 👉 Especifico de inglês
 .o0sec10box{}
 .o0sec10box2{}
 .o0sec10box3{}
-.o0parasabermais{}
+.o0parasabermais{
+    border-bottom: 2px solid var(--fiscor2A) ;
+    border-left: 2px solid var(--fiscor2A) ;
+    padding:0 1em 1em 1em;
+}
+.o0parasabermais::after{
+background: url(../images/pv_saibamais.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 40px ;
+height:5px ;
+position: absolute;
+margin:18px 0 0 41% ;
+}
+.o0parasabermais> .p1box1tit{
+    background: var(--fiscor2A);
+    font-family: var(--titulo);
+    font-size: var(--peso7);
+    max-width: max-content;
+    padding: 0.2em 1em;
+    margin: 0 0 1em -1em;
+}
+.o0parasabermais> .p1box1tit::before{
+background: url(../images/pv_sabermais1.svg) no-repeat;
+background-size: 100%;
+content: '';
+width:20px ;
+height:20px ;
+position: absolute;
+margin:6px 0 0 -38px ;
+}
+.o0parasabermais> .p1box1tit::after{
+    background: url(../images/pv_sabermais2.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width:20px ;
+    height:35px ;
+    position: absolute;
+    margin:-10px 0 0  7px;
+    }
 .o0referencias{}
 .o0pronuncia{}
 .o0sugestcomp{}
@@ -2944,7 +3106,14 @@ o2esquemabox
 .o2mapabox{}
 .o2mapaescala{}
 .o2mapaescalabox{}
-.o2graficobox{}
+.o2graficobox{
+    display: table;
+  margin: 1em 0;
+}
+.o2graficobox>figure{
+    border: 1px solid var(--preto);
+    margin: 0 0 0 0;
+}
 .o2esquemabox{}
 
 /*👉O3: Jornal e Citação👈*/
@@ -2959,7 +3128,20 @@ o3fiovocabulario
     border: 1px solid #A7ACA8;
     margin: 1em 0;
 }
-.o3fiocitacao{}
+.o3fiocitacao{
+    border-top: 2px solid var(--apoio1A);
+    border-left: 2px solid var(--apoio1A);
+    padding: 1em;
+}
+.o3fiocitacao::before{
+background: url(../images/bg_trechocitacao.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 30px;
+height: 30px;
+position: absolute;
+margin: -18px 0 0 -18px;
+}
 .o3fiovocabulario{}
 
 
@@ -3009,7 +3191,7 @@ content: '';
 width: 40px ;
 height:10px ;
 position: absolute;
-margin:18px 0 0 54% ;
+margin:18px 0 0 44% ;
 }
 .o4ficha{}
 p.o4ficha {
@@ -3189,7 +3371,11 @@ span.o4ficha2 {
     margin: 1em 0;
 }
 .o4avaliacaobox{}
-.o4vocabulariobox{}
+.o4vocabulariobox{
+    background:url(../images/pv_vocabulario.svg) top left no-repeat;
+    padding: 1px 1em;
+    margin: 1em 0;
+}
 .o4glossariobox{}
 .o4etapabox{}
 .o4exemplobox{}
