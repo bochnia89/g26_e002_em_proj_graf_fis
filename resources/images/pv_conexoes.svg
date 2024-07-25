@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="847" height="122" viewBox="0 0 847 122">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_67" data-name="Retângulo 67" width="847" height="122" transform="translate(964 2070)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="pv_conexoes" transform="translate(-964 -2070)" clip-path="url(#clip-path)">
+    <g id="Grupo_353" data-name="Grupo 353">
+      <path id="Caminho_375" data-name="Caminho 375" d="M0-90.883h846.85V-199.32H0Z" transform="translate(964 2196.195)" fill="#b8e6d9"/>
+      <path id="Caminho_377" data-name="Caminho 377" d="M0,0-19.5,19.5h-156L-195,0h-78l-78,78h-78l-19.5,19.5h-78L-534,90v66h66l39,39h312l39-39H0l19.5-19.5h156L195,156H312V78H195L117,0Z" transform="translate(1497.999 1996.875)" fill="#1bb897"/>
+      <path id="Caminho_378" data-name="Caminho 378" d="M0,0H-121.039l-78-78H-307.961l-19.5,19.5H-491.539l-19.5-19.5h-69.922l-78,78h-78l-19.5,19.5H-846" transform="translate(1810 2084.624)" fill="none" stroke="#78d2b9" stroke-width="2.375"/>
+      <path id="Caminho_379" data-name="Caminho 379" d="M0,0H70.039l39,39H412.961L471.6-19.5H713.539L733.039,0H846" transform="translate(964 2142.951)" fill="none" stroke="#78d2b9" stroke-width="2.375"/>
+      <path id="Caminho_380" data-name="Caminho 380" d="M0,0H-273l-39-39H-526.5l-39-39H-663l-97.5,97.5H-846" transform="translate(1810 2103.624)" fill="none" stroke="#009087" stroke-width="9.75"/>
+      <path id="Caminho_382" data-name="Caminho 382" d="M0,0V19.5M19.5,0V19.5M39,0V19.5M48.75,0V19.5M29.25,0V19.5M9.75,0V19.5M-9.75,0V19.5" transform="translate(1088.014 2153.349)" fill="none" stroke="#009087" stroke-width="4.875"/>
+    </g>
+  </g>
+</svg>

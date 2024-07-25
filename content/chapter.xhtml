@@ -3149,6 +3149,7 @@ O texto na íntegra das competências gerais e competências específicas da BNC
                    <mark>div.o3fiocitacao / blockquote.p3citacao</mark>                 
                 </p>
                 <!-- Comentário do exemplo  -->
+                 <p class="p5marcadorcaixa">EXEMPLO 1</p>
                 <div class="o3fiocitacao">
                     <blockquote class="p3citacao">[...]</blockquote>
                     <blockquote class="p3citacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sunt adipisci architecto, deserunt iste veniam doloremque nihil autem corrupti quibusdam enim esse ducimus repellat qui assumenda fugit rerum beatae voluptates.
@@ -3316,17 +3317,31 @@ O texto na íntegra das competências gerais e competências específicas da BNC
                    <mark>p.p5marcador / p.p5marcador2 / p.p5marcadorcaixa / p.p5marcadorcaixa2 / p.p5marcadorcaixa3 / p.p5marcadorromano / p.p5marcador2romano</mark>                                 
                 </p>
                 <!-- Comentário do exemplo  -->
-                <p class="p5marcador">A.</p>
-                <p class="p5marcador">1.</p>
-                <p class="p5marcador">1º.</p>
-                <p class="p5marcador2">B.</p>
-                <p class="p5marcador2">1.</p>
-                <p class="p5marcador2">1º.</p>
-                <p class="p5marcadorcaixa">Opção A</p>
-                <p class="p5marcadorcaixa2">Opção B</p>
-                <p class="p5marcadorcaixa3">Opção c</p>
-                <p class="p5marcadorromano">III.</p>
-                <p class="p5marcador2romano">III.</p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador">A.</span> Marcador <mark>p.p2textomarcadorsemrecuo / span.p5marcador</mark>
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador">1.</span> Marcador <mark>sp.p2textomarcadorsemrecuo / pan.p5marcador</mark>
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador">1<span class="c4ordinal">º</span>.</span> Marcador <mark>p.p2textomarcadorsemrecuo / span.p5marcador / span.c4ordinal</mark>
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador2">B.</span> Marcador <mark>p.p2textomarcadorsemrecuo / span.p5marcador2</mark>
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador2">1.</span> Marcador <mark>p.p2textomarcadorsemrecuo / span.p5marcador2</mark>
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador2">1<span class="c4ordinal">º</span>.</span> Marcador
+                    <mark>p.p2textomarcadorsemrecuo / span.p5marcador2 /span.c4ordinal</mark>
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcadorromano">III.</span> Marcador
+                    <mark>p.p2textomarcadorsemrecuo / span.p5marcadorromano</mark>
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador2romano">III.</span> Marcador
+                    <mark>p.p2textomarcadorsemrecuo / span.p5marcador2romano</mark>
+                </p>
+
+
+
+                <p class="p5marcadorcaixa">Opção A <mark>p.p5marcadorcaixa</mark></p>
+                <p class="p5marcadorcaixa2">Opção B <mark>p.p5marcadorcaixa2</mark></p>
+                <p class="p5marcadorcaixa3">Opção C <mark>p.p5marcadorcaixa3</mark></p>
                 <!-- Comentário do exemplo -->
                 <p class="comentariocode">
                     <mark>p.p5marcadornegativo / p.p5marcador2negativo / p.p5marcadorcaixanegativo / p.p5marcadorcaixa2negativo / p.p5marcadorcaixa3negativo</mark>                                 
@@ -3875,10 +3890,17 @@ O texto na íntegra das competências gerais e competências específicas da BNC
                  <!-- Comentário do exemplo  -->
                 <figure>
                     <p class="p5marcador">A.</p>
-                    <p class="o4medidaanimalbox">Lorem <mark>p.o4medidaanimalbox</mark> ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="o4medidaanimalbox">Lorem <mark>p.o4medidaanimalbox</mark> ipsum dolor sit amet consectetur adipisicing elit. Lo</p>
                     <img src="../resources/images/un00/exemplo_imagem.png" alt="texto alternativo" width="360" height="410" />
                     <figcaption class="p4legenda">Lorem <mark>figcaption.p4legenda</mark> ipsum dolor, sit amet consectetur adipisicing elit. </figcaption>
                 </figure>
+
+                <figure>
+                    <p class="o4medidaanimalbox"><strong class="c1bold">Lorem ipsum:</strong> dolor sit amet consectetur adipisicing elit. Dolores quam quisquam hic praesentium odio accusamus cum nemo, nobis ad rerum atque obcaecati dolorem saepe alias minus aperiam. Nostrum, facilis! Fuga.</p>
+                    <img src="../resources/images/un00/exemplo_imagem.png" alt="texto alternativo" width="360" height="410" />
+                    <figcaption class="p4legenda">Lorem <mark>figcaption.p4legenda</mark> ipsum dolor, sit amet consectetur adipisicing elit. </figcaption>
+                </figure>
+                
                 
 
                 <!-- Título de instrução -->
@@ -4192,7 +4214,7 @@ O texto na íntegra das competências gerais e competências específicas da BNC
 
             <!-- Título de instrução -->
             <p class="instrucao" id="livrosecoes">
-            LE - EXEMPLO DE <mark>SEÇÃO 1</mark> | <strong>snippet:</strong> <code></code>
+            LE - EXEMPLO DE <mark>SEÇÃO 1 CONEXÕES</mark> | <strong>snippet:</strong> <code></code>
             </p>
             <!-- Comentário do exemplo -->
             <p class="comentariocode">
@@ -4200,7 +4222,8 @@ O texto na íntegra das competências gerais e competências específicas da BNC
             </p>
             <!-- Comentário do exemplo  -->
             <div class="o0sec1">
-                <h2 class="p1sec1tit1">Título seção 1 nível 1 </h2> 
+                
+                <h2 class="p1sec1tit1"><span class="d0tit1">CONEXÕES com ...</span> <span class="d0tit2">LÍNGUA PORTUGUESA E ARTE</span> </h2> 
                 <div class="box">
                     <p class="p1sec1tit2">Título seção 1 nível 2 <mark>p.p1sec1tit2</mark></p>
                     <p class="p1sec1tit3">Título seção 1 nível 3 <mark>p.p1sec1tit3</mark></p>
@@ -4222,7 +4245,10 @@ O texto na íntegra das competências gerais e competências específicas da BNC
 
                 </div>
             </div>
-            <div class="o0sec1a"><mark>div.o0sec1a</mark></div>
+            <div class="o0sec1a"><div class="box"><mark>div.o0sec1a</mark>
+                <p class="2texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eligendi corrupti delectus omnis unde consectetur numquam atque quae similique? Expedita, dolor vero quod facilis doloremque ab dolorem asperiores sed commodi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eligendi corrupti delectus omnis unde consectetur numquam atque quae similique? Expedita, dolor vero quod facilis doloremque ab dolorem asperiores sed commodi.
+                </p></div></div>
 
             <!-- Título de instrução -->
             <p class="instrucao">
@@ -4282,7 +4308,7 @@ O texto na íntegra das competências gerais e competências específicas da BNC
                 LE - EXEMPLO DE <mark>SEÇÃO 4</mark> | <strong>snippet:</strong> <code></code>
                 </p>
                 <div class="o0sec4">
-                    <h2 class="p1sec4tit1"><span>EXPLORANDO</span><span> A </span><span>TEGNOLOGIA</span></h2>
+                    <h2 class="p1sec4tit1"><span class="">MAIS</span><span class=""> QUESTÕES </span></h2>
                     <div class="box">
                         <p class="p1sec4tit2">Título seção 4 nível 2 <mark>p.p1sec4tit2</mark></p>
                         <p class="p1sec4tit3">Título seção 4 nível 3 <mark>p.p1sec4tit3</mark></p>
@@ -4306,10 +4332,10 @@ O texto na íntegra das competências gerais e competências específicas da BNC
 
             <!-- Título de instrução -->
             <p class="instrucao">
-                LE - EXEMPLO DE <mark>SEÇÃO 5</mark> | <strong>snippet:</strong> <code></code>
+                LE - EXEMPLO DE <mark>SEÇÃO 5 PRÁTICA CIENTÍFICA</mark> | <strong>snippet:</strong> <code></code>
                 </p>
                 <div class="o0sec5">
-                    <h2 class="p1sec5tit1">Título seção 5 nível 1 <mark>h2.p1sec5tit1</mark></h2>
+                    <h2 class="p1sec5tit1">PRÁTICA CIENTÍFICA</h2>
                     <div class="box">
                         <p class="p1sec5tit2">Título seção 5 nível 2 <mark>p.p1sec5tit2</mark></p>
                         <p class="p1sec5tit3">Título seção 5 nível 3 <mark>p.p1sec5tit3</mark></p>
@@ -4331,10 +4357,10 @@ O texto na íntegra das competências gerais e competências específicas da BNC
 
          <!-- Título de instrução -->
          <p class="instrucao">
-            LE - EXEMPLO DE <mark>SEÇÃO 6</mark> | <strong>snippet:</strong> <code></code>
+            LE - EXEMPLO DE <mark>SEÇÃO 6 LIGADO NO TEMA</mark> | <strong>snippet:</strong> <code></code>
             </p>
             <div class="o0sec6">
-                <h2 class="p1sec6tit1">Título seção 6 nível 1</h2>
+                <h2 class="p1sec6tit1">LIGADO NO TEMA</h2>
                 <div class="box">
                     <p class="p1sec6tit2">Título seção 6 nível 2 <mark>p.p1sec6tit2</mark></p>
                     <p class="p1sec6tit3">Título seção 6 nível 3 <mark>p.p1sec6tit3</mark></p>
@@ -4353,11 +4379,15 @@ O texto na íntegra das competências gerais e competências específicas da BNC
                 </div>
             </div>
 
-            <div class="o0sec6a"></div>
+            <div class="o0sec6a">
+                <div class="box">
+                    <mark>div.o0sec6a</mark>
+                </div>
+            </div>
             
             <!-- Título de instrução -->
             <p class="instrucao">
-            LE - EXEMPLO DE <mark>SEÇÃO 7</mark> | <strong>snippet:</strong> <code></code>
+            LE - EXEMPLO DE <mark>SEÇÃO 7 RETOME O QUE ESTUDOU </mark> | <strong>snippet:</strong> <code></code>
             </p>
             <div class="o0sec7">
                 <h2 class="p1sec7tit1">Título seção 7 nível 1</h2>
@@ -4709,17 +4739,19 @@ O texto na íntegra das competências gerais e competências específicas da BNC
             </p>
             <!-- Comentário do exemplo  -->
             <div class="o4boxmateriais">
-                <p class="d0materiaistit">Materiais <mark>p.d0materiaistit</mark></p>
-                <ul class="p2textoitem">
-                    <li>descobertas <mark>ul.p2textoitem</mark></li>
-                    <li>arqueológicas</li>
-                    <li>laneta</li>
-                    <li>continente</li>
-                    <li>desenvolveram</li>
-                    <li>civilizações</li>
-                    <li>organizadas</li>
-                </ul>
-    
+                <p class="p1box1tit">Materiais <mark>p.d0materiaistit</mark></p>
+               <div class="box">
+                    <ul class="p2textoitem">
+                        <li>descobertas <mark>ul.p2textoitem</mark></li>
+                        <li>arqueológicas</li>
+                        <li>laneta</li>
+                        <li>continente</li>
+                        <li>desenvolveram</li>
+                        <li>civilizações</li>
+                        <li>organizadas</li>
+                    </ul>
+        
+               </div>
             </div>
 
                   <!-- Título de instrução -->
@@ -4752,7 +4784,7 @@ O texto na íntegra das competências gerais e competências específicas da BNC
              </p>
 
              <div class="o4boxinfo">
-                <p class="p2textosemrecuo">Lorem, <mark>div.o4boxinfo  / p.p2textosemrecuo </mark> ipsum dolor sit amet consectetur adipisicing elit. Amet unde esse, error quod praesentium aliquam voluptas totam vitae voluptatum eaque laboriosam ullam ut inventore quae id? Cumque ullam ratione dicta!</p>
+                <div class="box"><p class="p2textosemrecuo">Lorem, <mark>div.o4boxinfo  / p.p2textosemrecuo </mark> ipsum dolor sit amet consectetur adipisicing elit. Amet unde esse, error quod praesentium aliquam voluptas totam vitae voluptatum eaque laboriosam ullam ut inventore quae id? Cumque ullam ratione dicta!</p></div>
              </div>
 
              <!-- Título de instrução -->
@@ -4795,7 +4827,17 @@ O texto na íntegra das competências gerais e competências específicas da BNC
                 <p class="p2textosemrecuo">Lorem, <mark>div.o4cuidadobox  / p.p2textosemrecuo </mark> ipsum dolor sit amet consectetur adipisicing elit. Amet unde esse, error quod praesentium aliquam voluptas totam vitae voluptatum eaque laboriosam ullam ut inventore quae id? Cumque ullam ratione dicta!</p>
             </div>
 
+
             
+            <!-- Título de instrução -->
+            <p class="instrucao">
+            LE - EXEMPLO DE <mark>IDEIA BOX</mark> | <strong>snippet:</strong> <code></code>
+            </p>
+            <div class="o4ideiabox">
+                <p class="p1box1tit">Compartilhe Ideias</p>
+                <div class="box"></div>
+            </div>
+
 
             <!-- Título de instrução -->
             <p class="instrucao">
@@ -4822,7 +4864,7 @@ O texto na íntegra das competências gerais e competências específicas da BNC
             </p>
             <!-- Comentário do exemplo  -->
             <div class="o4dicabox">
-                <p class="p1box2tit">Dica <mark>p.p1box2tit</mark></p>
+                <p class="p1box1tit">Dica</p>
                <div class="box">
                     <p class="p4cuidadodica">Lorem, <mark>p.p4cuidadodica</mark> ipsum dolor sit amet consectetur adipisicing elit. Amet unde esse, error quod praesentium aliquam voluptas totam vitae voluptatum eaque laboriosam ullam ut inventore quae id? Cumque ullam ratione dicta!</p>
                     <ul class="p4cuidadodicaitem">

@@ -3,7 +3,7 @@
 // Títulos: 'Barlow' ;
 // Citações: 'Noto Serif';
 // Texto: 'Work Sans' ;
-// Ordinal / químico: 'Calibri' ;
+// Ordinal / químico: 'Work Sans' ;
 
 
 
@@ -697,13 +697,19 @@
     --link: #00649c;
     --manualu: #E4F2E7;
 
+    /* Cores apoio geral */
+    --apoio1Afnd:#FFE8B6;
     --apoio1A:#FBBA00;
     --apoio1B:#F39200;
     --apoio1C:#EA5B0C;
     --apoio2A:#C8D400;
     --apoio2B:#95C11F;
     --apoio2C:#3AAA35;
-    --apoio3A:#D1347D;
+    --apoio3fnd:#D5ECF4;
+    --apoio3A:#89CCCA; 
+    --apoio3B2:#2DB8C5;    
+    --apoio3C2:#0099B2;
+    
     --apoio3B:#9F377E;
     --apoio3C:#643780;
     --apoio4A:#5BC5F2;
