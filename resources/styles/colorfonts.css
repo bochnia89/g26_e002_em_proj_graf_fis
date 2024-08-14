@@ -696,12 +696,15 @@
     --cinza: #ececec;
     --link: #00649c;
     --manualu: #E4F2E7;
+    --jornal: #DAE0E3;
 
     /* Cores apoio geral */
-    --apoio1Afnd:#FFE8B6;
-    --apoio1A:#FBBA00;
+    --apoio1Afnd:#FFE8B6; 
+    --apoio1A:#FBBA00; 
     --apoio1B:#F39200;
-    --apoio1C:#EA5B0C;
+    --apoio1Bfnd:#FEE0BC;
+    --apoio1C:#EA5B0C; 
+    --apoio2Afnd:#EDF1C6;
     --apoio2A:#C8D400;
     --apoio2B:#95C11F;
     --apoio2C:#3AAA35;
@@ -718,18 +721,34 @@
     --fiscor1A:#00A68D;
     --fiscor1B:#00827F;
     --fiscor1C:#56BAA2;
-    --fiscor1D:#8BCBB7 ;
-    --fiscor1E:#B3DBCD ;
     --fiscor2A:#EB5B25;
     --fiscor2B:#C8422A;
     --fiscor2C:#F18825;
+    --fiscor2Cfnd:#FDE2CF;
+
+    --quicor1A:#008D94;
+    --quicor1B:#006E82;
+    --quicor1C:#009A9B;
+    --quicor2A:#E7344C;
+    --quicor2B:#C1374F;
+    --quicor2C:#EF7A76;
+    --quicor2Cfnd:#FBDBDB;
+
+    --biocor1A:#65B32E;
+    --biocor1B:#00903C;
+    --biocor1C:#95C11F;
+    --biocor2A:#C70777;
+    --biocor2B:#E50076;
+    --biocor2C:#E94287;
+    --biocor2Cfnd:#F9D2E1;
+    
     
     --azul1:#005DB2;
     --azul2:#1B83C8;
     --azul3:#BCDCF5;
     --azul4:#D9EFFD;
 
-    --turquesa1:#00ACA9;
+    --turquesa1:#02AABA;
     --turquesa2:#87CDD3;
     --turquesa3:#BEE2E9;
     --turquesa4:#E0F1F5;

@@ -1,6 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28.346" height="24.803" viewBox="0 0 28.346 24.803">
-  <g id="pv_p0tit3" transform="translate(-373 -318.803)">
-    <path id="Caminho_296" data-name="Caminho 296" d="M0,0V7.677l3.543,3.971v1.781L0,17.306v7.5H24.8v-7.5l3.543-3.877V11.648L24.8,7.677V0Z" transform="translate(373 318.803)" fill="#ff9027"/>
-    <path id="Caminho_297" data-name="Caminho 297" d="M0,0,3.845-3.845V-5.626L0-9.472H-1.894v1.857H-.815L1.951-4.849v.227L-.815-1.856H-1.894V0ZM6.308,0l3.846-3.845V-5.626L6.308-9.472H4.414v1.857h1.08L8.259-4.849v.227L5.494-1.856H4.414V0Z" transform="translate(382.934 335.94)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="22.676" height="19.842" viewBox="0 0 22.676 19.842">
+  <g id="pv_p0tit3" transform="translate(0 19.842)">
+    <g id="Grupo_383" data-name="Grupo 383" transform="translate(0 -19.842)">
+      <path id="Caminho_462" data-name="Caminho 462" d="M0,0V6.142L2.834,9.319v1.424L0,13.845v6H19.842v-6l2.834-3.1V9.319L19.842,6.142V0Z" fill="#ff9027"/>
+    </g>
+    <g id="Grupo_384" data-name="Grupo 384" transform="translate(7.947 -6.133)">
+      <path id="Caminho_463" data-name="Caminho 463" d="M0,0,3.076-3.076V-4.5L0-7.578H-1.515v1.486h.863L1.561-3.879V-3.7L-.652-1.485h-.863V0ZM5.046,0,8.123-3.076V-4.5L5.046-7.578H3.531v1.486h.864L6.607-3.879V-3.7L4.395-1.485H3.531V0Z" fill="#fff"/>
+    </g>
   </g>
 </svg>

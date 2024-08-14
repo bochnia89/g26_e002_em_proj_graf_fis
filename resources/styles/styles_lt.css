@@ -155,6 +155,8 @@ orientatx
 ocultatx
 ocultamn
 hifen_ano
+trocacaracter1
+trocacaracter2
 */
 
 .chanfrado{
@@ -219,7 +221,10 @@ hifen_ano
 .hifen_ano{
     margin-left: -8px;
 }
-
+.trocacaracter1{}
+.trocacaracter2{
+    color: var(--apoio1B);
+}
 
 /* Visual do número da página */
 header .pag {
@@ -408,6 +413,10 @@ p1sumariopeso2numero
 p1sumariooedpv
 p1sumariooedpeso1
 p1sumariooedpeso2
+p1sumariooedpeso3
+p1sumarioaudiospeso1
+p1sumarioaudiospeso2
+p1sumarioaudiospeso3
 
 */
 .p1sumariopv{}
@@ -429,6 +438,10 @@ p1sumariooedpeso2
 .p1sumariooedpv{}
 .p1sumariooedpeso1{}
 .p1sumariooedpeso2{}
+.p1sumariooedpeso3{}
+.p1sumarioaudiospeso1{}
+.p1sumarioaudiospeso2{}
+.p1sumarioaudiospeso3{}
 
 /*👉=================== ESTILOS MIOLO ================================👈*/
 /* TÍTULOS  */
@@ -495,8 +508,27 @@ p0tit6negativo
    max-width: max-content;
    padding: 0.2em 0.8em;
 }
+.p0tit1pv::before {
+    background: url(../images/pv_capitulo_a.svg) no-repeat;
+      background-size: auto;
+    background-size: 100%;
+    content: '';
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    margin: 6px 0 0 -18px;
+  }
 
-
+  .p0tit1pv::after {
+    background: url(../images/pv_capitulo_b.svg) no-repeat;
+      background-size: auto;
+    background-size: 100%;
+    content: '';
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    margin: -10px 0 0 9px;
+  }
 
 .p0tit2{
     font-size: var(--peso2);
@@ -599,9 +631,11 @@ margin:8px 0 0 -32px ;
     }
 .p0tit5{
     font-size: var(--peso5);
+    color: var(--fiscor1C);
 }
 .p0tit6{
     font-size: var(--peso6);
+    color: var(--fiscor2B);
 }
 
 
@@ -628,8 +662,17 @@ p1tabelatexto
 p1tabelatextoitem
 p1tabelatextoitemcont
 */
-.p1tabelatit{}
-.p1tabelatitcoluna{}
+.p1tabelatit{
+    text-align: center;
+    font-family: var(--titulo);
+    font-size: var(--peso7);
+    font-weight: bold;
+}
+.p1tabelatitcoluna{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    font-weight: bold;
+}
 .p1tabelatexto{}
 .p1tabelatextoitem{}
 .p1tabelatextoitemcont{}
@@ -659,13 +702,15 @@ p1tabelatextoitemcont
     max-width: 100%;
     margin: 1em 0;
     box-sizing: border-box;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 .tb_tabela td {
     border: 1px solid var(--preto_);
 }
 .tb_tabela th {
     border: 1px solid var(--preto_);
-    background: var(--cinza);
+    background: var(--apoio3fnd);
     font-family: var(--titulo);
     font-size: 0.9em;
     text-align: center;
@@ -713,7 +758,17 @@ p1mapatit
 o2mapagravata1
 o2mapagravata2
 */
-.p1mapatit{}
+.p1mapatit{
+    background: url(../images/pv_grafico.svg) top left no-repeat;
+  background-size: contain;
+  border: 1px solid var(--preto);
+  font-family: var(--titulo);
+  font-weight: bold;
+  padding: 0.2em 0.5em 0.2em 1.5em;
+  max-width: 100%;
+  display: table-caption;
+  caption-side: top;
+}
 .o2mapagravata1{}
 .o2mapagravata2{}
 
@@ -829,9 +884,26 @@ height: 21px;
 position: absolute;
 margin:0 0 0 -63px;
 }
-.p1sec1tit2{}
-.p1sec1tit3{}
-.p1sec1tit4{}
+.p1sec1tit2,
+.p1sec1tit3,
+.p1sec1tit4{
+    font-family: var(--titulo);
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.p1sec1tit2{
+    color: var(--apoio1C);
+    font-size: var(--peso5);
+}
+.p1sec1tit3{
+    color: var(--apoio1B);
+    font-size: var(--peso6);
+}
+.p1sec1tit4{
+    color: var(--preto);
+    font-size: var(--peso7);
+}
 
 .p1sec2tit1{
     background: var(--apoio2A);
@@ -861,7 +933,7 @@ margin:6px 0 0 -38px;
 .p1sec2tit4{}
 
 .p1sec3tit1{
-    background: var(--fiscor1A);
+    background: var(--apoio3C2);
     padding: 0.2em 0em 0.2em 1em;
     max-width: max-content;
     color: var(--branco);
@@ -898,6 +970,7 @@ margin: 6px 0 0 -38px;
 .p1sec4tit1{
     font-family: var(--titulo);
     font-weight: bold;
+    font-size: var(--peso6);
 }
 .p1sec4tit1 span{
     background: var(--roxo2);
@@ -934,8 +1007,29 @@ margin: 6px 0 0 -38px;
     max-width: max-content;
     padding: 0.5em 1em;
 }
-.p1sec5tit2{}
-.p1sec5tit3{}
+.p1sec5tit1::after{
+background: url(../images/pv_sec5tit1.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 19px;
+height: 47px ;
+position: absolute;
+margin:-10px 0 0 19px ;
+}
+.p1sec5tit2{
+    color: var(--apoio1C);
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--peso6);
+    margin: 0.5em 0;
+}
+.p1sec5tit3{
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--peso7);
+    margin: 0.5em 0;
+}
 .p1sec5tit4{}
 
 .p1sec6tit1{
@@ -956,12 +1050,43 @@ margin: 6px 0 0 -38px;
 .p1sec6tit3{}
 .p1sec6tit4{}
 
+
+.p1sec7tit1{
+   color: var(--branco);
+    font-family: var(--texto);
+    font-weight: bold;
+    font-size: var(--peso7);
+    background: var(--turquesa1);
+    max-width: max-content;
+    padding:0.5em 1em;
+    margin: -25px 0 0 15px ;
+    position: absolute;
+    z-index: 2;
+}
+.p1sec7tit1::before{
+    background: url(../images/bg_sec1tit1.svg) top left no-repeat;
+    background-size: 100%;
+    content: '';
+    width:46px ;
+    height:12px ;
+    position: absolute;
+    margin:-15px 0 0 -18px ;
+}
+
 .p1sec7tit1{}
 .p1sec7tit2{}
 .p1sec7tit3{}
 .p1sec7tit4{}
 
-.p1sec8tit1{}
+.p1sec8tit1{
+    background: var(--apoio2C);
+    font-family: var(--titulo);
+    font-size: var(--peso7);
+    color: var(--branco);
+    width: max-content;
+    padding: 0.2em 1em;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 0% 100%);
+}
 .p1sec8tit2{}
 .p1sec8tit3{}
 .p1sec8tit4{}
@@ -972,26 +1097,6 @@ margin: 6px 0 0 -38px;
 .p1sec9tit4{}
 
 .p1sec10tit1{}
-.p1sec10tit1{
-    border: 1px solid var(--apoio1A);
-    font-family: var(--texto);
-    font-weight: bold;
-    background: var(--fiscor1C);
-    max-width: max-content;
-    padding:0.5em 1em;
-    margin: -25px 0 0 15px ;
-    position: absolute;
-    z-index: 2;
-}
-.p1sec10tit1::before{
-    background: url(../images/bg_sec1tit1.svg) top left no-repeat;
-    background-size: 100%;
-    content: '';
-    width:46px ;
-    height:12px ;
-    position: absolute;
-    margin:-20px 0 0 -20px ;
-}
 
 .p1sec10tit2{}
 .p1sec10tit3{}
@@ -1099,13 +1204,25 @@ p2textosemrecuoletracont
     font-size: var(--pesoPadrao);
     text-align: justify;
 }
+
+ul.p2textosemrecuoitem li::before,
+ul.p2textosemrecuosubitem li::before,
+ul.p2textosemrecuonumitem li::before {
+    content: '•';
+    color: var(--apoio3C2);
+     font-size: 1.2em;
+     margin: 0 0 0 -0.8em;
+     position: absolute;
+ }
+
 .p2textosemrecuo{
     margin: 0.5em 0;
 }
 ul.p2textosemrecuoitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 1em;
 }
+
 p.p2textosemrecuoitem{
     margin: 0.5em 0 0.5em 1em;
 }
@@ -1119,7 +1236,7 @@ p.p2textosemrecuoitem::before {
     margin: 0.5em 0 0.5em 1em;
 }
 ul.p2textosemrecuosubitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 2em;
 }
 p.p2textosemrecuosubitem{
@@ -1154,7 +1271,7 @@ p.p2textosemrecuosubitem::before {
     margin: 0.5em 0 0.5em 2em;
 }
 ul.p2textosemrecuonumitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 3.5em;
 }
 p.p2textosemrecuonumitem{
@@ -1233,13 +1350,25 @@ p2textomarcadorsubitemcont
     text-align: justify;
 }
 
+ul.p2textoitem li::before,
+ul.p2textosubitem li::before,
+ul.p2textoletraitem  li::before,
+ul.p2textomarcadoritem li::before,
+ul.p2textomarcadorsubitem li::before {
+    content: '•';
+    color: var(--apoio3C2);
+     font-size: 1.2em;
+     margin: 0 0 0 -0.8em;
+     position: absolute;
+ }
+
 .p2texto{
     margin: 0.5em 0 0.5em 0;
     text-indent: 1.5em;
 }
 
 ul.p2textoitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 40px;
 }
 p.p2textoitem{
@@ -1260,13 +1389,7 @@ ul.p2textosubitem{
     list-style: none;
     margin: 0.5em 0 0.5em 3.5em;
 }
-ul.p2textosubitem li::before {
-    content: '•';
-    color: var(--verde1);
-    font-size: 1.2em;
-    margin: 0 0 0 -0.8em;
-    position: absolute;
-}
+
 
 p.p2textosubitem{
     margin: 0.5em 0 0.5em 3.5em;
@@ -1296,7 +1419,7 @@ p.p2textosubitem::before {
     margin: 0.5em 0 0.5em 50px;
 }
 ul.p2textoletraitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 65px;
 }
 p.p2textoletraitem{
@@ -1330,7 +1453,7 @@ p.p2textoletraitem::before {
 }
 
 ul.p2textomarcadoritem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 4em;
 }
 p.p2textomarcadoritem{
@@ -1350,13 +1473,7 @@ ul.p2textomarcadorsubitem{
     list-style: none;
     margin: 0.5em 0 0.5em 5em;
 }
-ul.p2textomarcadorsubitem li::before{
-    content: '•';
-    color: var(--verde1);
-    font-size: 1.2em;
-    margin: 0 0 0 -0.8em;
-    position: absolute;
-}
+
 p.p2textomarcadorsubitem{
     margin: 0.5em 0 0.5em 5em;
 }  
@@ -1404,6 +1521,17 @@ p2questaomarcadorcont
     font-size: var(--pesoPadrao);
     text-align: justify;
 }
+
+ul.p2questaoletraitem li::before,
+ul.p2questaoitem li::before,
+ul.p2questaosubitem li::before{
+    content: '•';
+    color: var(--apoio3C2);
+     font-size: 1.2em;
+     margin: 0 0 0 -0.8em;
+     position: absolute;
+ }
+
 .p2questao{
     margin: 0.5em 0;
 }
@@ -1419,7 +1547,7 @@ p2questaomarcadorcont
 }
 
 ul.p2questaoletraitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 3em;
 }
 p.p2questaoletraitem{
@@ -1438,7 +1566,7 @@ p.p2questaoletraitem::before {
 }
 
 ul.p2questaoitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 1em;
 }
 p.p2questaoitem{
@@ -1459,15 +1587,7 @@ p.p2questaoitem::before {
 ul.p2questaosubitem{
     margin: 0.5em 0 0.5em 2em;
 }
-ul.p2questaosubitem li::before{
-    content: '•';
-    color: var(--verde1);
-    font-size: 1.2em;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    margin: 0 0 0 -14px;
-}
+
 p.p2questaosubitem{
     margin: 0.5em 0 0.5em 2em;
 }
@@ -1523,6 +1643,9 @@ p2atvmarcadoritem
 p2atvmarcadoritemcont
 p2atvsomatoria
 p2atvsomatoriacont
+p2atvsemrecuomarcador
+p2atvsemrecuomarcadorcont
+p2atvsemrecuomarcadorromano
 */
 .p2atv,
 .p2atvcont,
@@ -1552,11 +1675,27 @@ p2atvsomatoriacont
 .p2atvmarcadoritem,
 .p2atvmarcadoritemcont,
 .p2atvsomatoria,
-.p2atvsomatoriacont{
+.p2atvsomatoriacont,
+.p2atvsemrecuomarcador,
+.p2atvsemrecuomarcadorcont,
+.p2atvsemrecuomarcadorromano{
     font-family: var(--texto);
     font-size: var(--pesoPadrao);
     text-align: justify;
 }
+
+ul.p2atvitem li::before,
+ul.p2atvsubitem li::before,
+ul.p2atvletraitem li::before,
+ul.p2atvletrasubitem li::before,
+ul.p2atvmarcadoritem  li::before{
+    content: '•';
+    color: var(--apoio3C2);
+     font-size: 1.2em;
+     margin: 0 0 0 -0.8em;
+     position: absolute;
+ }
+
 
 .p2atv{
     margin: 0.5em 0 0.5em 30px;
@@ -1579,7 +1718,7 @@ p2atvsomatoriacont
 }
 
 ul.p2atvitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 3em;
 }
 p.p2atvitem{
@@ -1597,13 +1736,6 @@ p.p2atvitem::before {
 
 ul.p2atvsubitem{
     margin: 0.5em 0 0.5em 4em;
-}
-ul.p2atvsubitem li::before{
-    content: '•';
-    color: var(--verde1);
-    font-size: 1.2em;
-    margin: 0 0 0 -0.8em;
-    position: absolute;
 }
 p.p2atvsubitem{
     margin: 0.5em 0 0.5em 4em;
@@ -1641,7 +1773,7 @@ p.p2atvsubitem::before {
 }
 
 ul.p2atvletraitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 4em;
 }
 p.p2atvletraitem{
@@ -1662,15 +1794,7 @@ p.p2atvletraitem::before {
 ul.p2atvletrasubitem{
     margin: 0.5em 0 0.5em 5em;
 }
-ul.p2atvletrasubitem li::before{
-    content: '•';
-    color: var(--apoio4B);
-    font-size: 1.2em;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    margin: 0 0 0 -12px;
-}
+
 p.p2atvletrasubitem{
     margin: 0.5em 0 0.5em 5em;
 }
@@ -1704,7 +1828,7 @@ p.p2atvletrasubitem::before {
     margin: 0.5em 0 0.5em 5.5em;
 }
 ul.p2atvmarcadoritem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 5em;
 }
 p.p2atvmarcadoritem{
@@ -1728,7 +1852,9 @@ p.p2atvmarcadoritem::before {
 .p2atvsomatoriacont{
     margin: 0.5em 0 0.5em 5em;
 }
-
+.p2atvsemrecuomarcador{}
+.p2atvsemrecuomarcadorcont{}
+.p2atvsemrecuomarcadorromano{}
 
 
 /*👉==================== TEXTOS PESO: intermediário ===================👈*/
@@ -1790,6 +1916,18 @@ p3intermediariosemrecuonumerocont
     text-align: left;
     max-width: 100%;
 }
+
+
+ul.p3intermediarioitem li::before,
+ul.p3intermediariomarcadoritem li::before,
+ul.p3intermediariosemrecuoitem li::before{
+    content: '•';
+    color: var(--apoio3C2);
+     font-size: 1.2em;
+     margin: 0 0 0 -0.8em;
+     position: absolute;
+ }
+
 .p3intermediariotit{
     font-family: var(--titulo);
     font-size: var(--pesoPadrao);
@@ -1801,7 +1939,7 @@ p3intermediariosemrecuonumerocont
 }
 
 ul.p3intermediarioitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 1em;
 }
 p.p3intermediarioitem{
@@ -1849,7 +1987,7 @@ p.p3intermediarioitem::before{
     margin: 0.5em 0 0.5em 2.8em;
 }
 ul.p3intermediariomarcadoritem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 3em;
 }
 p.p3intermediariomarcadoritem{
@@ -1875,7 +2013,7 @@ p.p3intermediariomarcadoritem{
 
 
 ul.p3intermediariosemrecuoitem{
-    list-style: disc;
+    list-style: none;
     margin: 0.5em 0 0.5em 1.5em;
 }
 p.p3intermediariosemrecuoitem{
@@ -1942,6 +2080,8 @@ p3citacaonumerocont
 }
 
 .p3citacaomanchete{
+    color: var(--apoio1C);
+    font-family: var(--titulo);
     font-weight: bold;
     font-size: var(--peso4);
     text-align: center;
@@ -1950,13 +2090,14 @@ p3citacaonumerocont
 .o3jornalfundo>.p3citacaomanchete {
     font-weight: bold;
     font-size: var(--peso4);
-    text-align: center;
+    text-align: left;
     margin: 0.5em 0;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #A7ACA8;
+  
+  
 }
 
 .p3citacaotit1{
+    color: var(--apoio1C);
     font-weight: bold;
     font-size: var(--peso5);
     text-align: center;
@@ -1970,8 +2111,10 @@ p3citacaonumerocont
 }
 
 .p3citacaoolho{
-    font-style: italic;
-    text-align: center;
+    font-family: var(--texto);
+    font-style: normal;
+    text-align: left;
+    font-weight: bold;
     margin: 0.5em 0;
 }
 
@@ -2038,9 +2181,11 @@ blockquote.p3citacaoitem::before {
 /* 
 p4iconeoed
 p4iconeoed2
+p4iconeoed3
 */
 .p4iconeoed{}
 .p4iconeoed2{}
+.p4iconeoed3{}
 
 /* Legenda */
 .p4legenda{
@@ -2073,6 +2218,7 @@ margin: 6px 0 0 -16px ;
 .p4cota{
     margin: 0.5em 0 0.5em 0;
 }
+.p4cotanegativo{}
 .p4cotamarcador{
     margin: 0.5em 0 0.5em 2em;
 }
@@ -2090,6 +2236,11 @@ margin: 6px 0 0 -16px ;
     font-family: var(--texto);
     font-size: var(--pesoMenor);
     text-align: right;
+    background: var(--cinza);
+    width: max-content;
+    margin: 0.5em 0;
+    padding: 0.2em 0.4em;
+    
 }
 
 /* Crédito Imagem*/
@@ -2197,15 +2348,15 @@ p5marcadorquestao
 .p5marcadornegativo{}
 .p5marcadorromano{
     background: var(--apoio3C2);
+    font-size: 1em;
     color: var(--branco);
     font-weight: bold;
     height: 25px;
     position: absolute;
     text-align: center;
-    padding-top:2px;
     margin: 0 0 0 -40px;
     width: 35px;
-    padding: 0 4px;
+    padding:3px 0 4px 0;
 }
 
 .p5marcador2{
@@ -2290,9 +2441,30 @@ p5aberturaobjtit
 p5aberturaobjitem
 p5aberturaobjtexto
 */
-.p5aberturaobjtexto{}
-.p5aberturaobjtit{}
+.p5aberturaobjtit,
+.p5aberturaobjitem,
+.p5aberturaobjtexto{
+    font-family: var(--texto);
+}
+.p5aberturaobjtexto{
+    margin: 0.5em 0 ;
+}
+.p5aberturaobjtit{
+    font-weight: bold;
+    margin: 0.5em 0 ;
+}
 .p5aberturaobjitem{}
+
+ul.p5aberturaobjitem{
+    margin: 0.5em 0 0.5em 1em;
+}
+ul.p5aberturaobjitem li::before{
+    content: '•';
+    color: var(--apoio3C2);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
 
 /*👉ESTILOS EXCLUSIVOS DO DIGITAL (Link)👈*/
 /* 
@@ -2521,6 +2693,7 @@ c0sumariosecao5
 /* 
 c0destaqueoed
 c0destaqueoed2
+c0destaqueoed3
 c0destaqueletra
 c0destaqueletracitacao
 c0destaquenumero
@@ -2532,11 +2705,12 @@ c0bulletnumitem
 c0bulletsubitem  👉Estilo de caracter utilizado no manual em U 
 c0destaqueuni
 c0destaquecap 👉Estilo de caracter utilizado no sumário mp  
-c0destaquesecao 👉Estilo de caracter utilizado no sumário mp 
+c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
+c0destaquebullet 👉Demanda surgiu no G26 física E002 para trocar cor de bullet para azul 
 */
 .c0destaqueoed{}
 .c0destaqueoed2{}
-
+.c0destaqueoed3{}
 .c0destaqueletra{
     font-weight: bold;
     width: 30px;
@@ -2544,7 +2718,7 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
     position: absolute;
     margin: 0 0 0 -30px;
     text-align: center;
-    color: var(--apoio4B);
+    color: var(--apoio3C2);
 }
 .c0destaqueletracitacao{
     font-weight: bold;
@@ -2556,12 +2730,13 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
 }
 .c0destaquenumero{
     font-weight: bold;
+    font-family: var(--titulo);
     width: 30px;
     height: 24px;
     position: absolute;
     margin: 0 0 0 -30px;
     text-align: center;
-    color: var(--apoio4B);
+    color: var(--apoio3C2);
 }
 .c0destaquenumerocitacao{
     font-weight: bold;
@@ -2577,9 +2752,10 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
     position: absolute;
     margin: 0 0 0 -40px;
     text-align: right;
+    color: var(--apoio3C2);
 }
 .c0destaquequestaonumero{
-    color: var(--apoio4B);
+    color: var(--apoio3C2);
     font-family: var(--titulo);
     font-weight: bold;
 }
@@ -2603,7 +2779,7 @@ c0destaquesecao 👉Estilo de caracter utilizado no sumário mp
 .c0destaqueuni{}
 .c0destaquecap{}/* Estilo de caracter utilizado no sumário mp */ 
 .c0destaquesecao{}/* Estilo de caracter utilizado no sumário mp */ 
-
+.c0destaquebullet{}
 
 /*👉C1: Estilos de bold e itálico👈*/
 /* 
@@ -2684,6 +2860,12 @@ c3idiomasimuladorhiperlink
     text-decoration: underline;
 }
 
+/* idioma citação */
+/* 
+c3idiomacitacaoitalico
+ */
+ .c3idiomacitacaoitalico{}
+
 /* (exceção no INDD - overprint) */ 
 /* 
 c3idiomaresposta
@@ -2714,8 +2896,15 @@ c3idiomabolditalicoresposta
 c3idiomavocabulariodestaque
 c3idiomavocabulariodestaqueitalico
 */
-.c3idiomavocabulariodestaque{}
-.c3idiomavocabulariodestaqueitalico{}
+.c3idiomavocabulariodestaque{
+    color: var(--apoio2C);
+  font-weight: bold;
+}
+.c3idiomavocabulariodestaqueitalico{
+    color: var(--apoio2C);
+  font-weight: bold;
+  font-style: italic;
+}
 
 /*👉C4: Estilos de Suporte👈*/
 /* 
@@ -2778,8 +2967,15 @@ c4textotachado
     font-weight: bold;
     font-style: italic;
 }
-.c4glossariodestaque{}
-.c4glossariodestaqueitalico{}
+.c4glossariodestaque{
+    color: var(--apoio2C);
+    font-weight: bold;
+}
+.c4glossariodestaqueitalico{
+    color: var(--apoio2C);
+    font-weight: bold;
+    font-style: italic;
+}
 
 .c4textotachado{
     text-decoration: line-through;
@@ -2893,16 +3089,21 @@ o0pronunciation 👉 Especifico de inglês
 }
 .o0aberturaatvbox{
     background: var(--laranja4);
-   /*👉 clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);👈*/
+    clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 100% 90%, 96% 100%, 0% 100%);
     padding: 1em;
-    
     margin-bottom: 1.5em;
+    width: 100%;
 }
 .o0aberturaobjbox{
     background: var(--branco);
     padding: 1em;
- 
-  
+    align-self:flex-start;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 0% 100%);
+    margin: 1em 0;  
+}
+.o0aberturaintrobox{
+    background: var(--branco);
+    padding: 1em;
 }
 .o0aberturalegenda{
     background: var(--branco);
@@ -2953,8 +3154,8 @@ position: absolute;
 margin:0 0 0 42% ;
 }
 .o0sec3{
-    border-bottom: 2px solid var(--fiscor1A);
-    border-left: 2px solid var(--fiscor1A);
+    border-bottom: 2px solid var(--apoio3C2);
+    border-left: 2px solid var(--apoio3C2);
     border-radius: 0 0 0 1em;
 }
 .o0sec3::after{
@@ -2991,6 +3192,17 @@ margin: 0 0 0 42% ;
     border-left: 2px solid var(--apoio1C);
     border-bottom: 2px solid var(--apoio1C);
 }
+.o0sec5::after {
+    background: url(../images/pv_sec5.svg) no-repeat;
+      background-size: auto;
+    background-size: auto;
+    background-size: 100%;
+    content: '';
+    width: 48px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 42%;
+  }
 .o0sec5 .box{
     padding: 1em;
 }
@@ -3003,28 +3215,22 @@ margin: 0 0 0 42% ;
 .o0sec6a .box{
     padding: 1em;
 }   
-.o0sec7{}
-.o0sec8{}
-.o0sec9{}
-.o0sec10{}
-.o0sec10{
+.o0sec7{
     margin: 3em 0 2em 0;
 }
-.o0sec10>.box{
+.o0sec7>.box{
     background: 
     url(../images/bg_canto1.svg) top left no-repeat,
     url(../images/bg_canto2.svg) top right no-repeat,
     url(../images/bg_canto3.svg) bottom right no-repeat,
-    url(../images/bg_canto4.svg) bottom left no-repeat,
-    url(../images/bg_abalateralesquerda.svg) top left no-repeat,
-    url(../images/bg_abalateraldireita.svg) top right no-repeat
-     var(--laranja4);
+    url(../images/bg_canto4.svg) bottom left no-repeat
+     var(--apoio3fnd);
    background-position-y: top, top, bottom, bottom, 40%, 70% ;
     padding: 2.5em 2em;
     margin: 0;
     /*👉clip-path: polygon(3% 0, 97% 0, 100% 10%, 100% 90%, 98% 100%, 3% 100%, 0 90%, 0 10%);👈*/
 }
-.o0sec10>.box::before{
+.o0sec7>.box::before{
     background: url(../images/bg_abatop.svg) top left no-repeat;
     background-size: 100%;
     content: '';
@@ -3034,16 +3240,28 @@ margin: 0 0 0 42% ;
     margin: -58px 0 0 60px;
 
 }
-.o0sec10>.box::after{
-    background: url(../images/bg_ababottom.svg) top left no-repeat;
+
+.o0sec8{
+    border-left: 2px solid var(--apoio2C);
+    border-bottom: 2px solid var(--apoio2C);
+}
+.o0sec8::after {
+    background: url(../images/pv_sec8.svg) no-repeat;
+      background-size: auto;
     background-size: 100%;
     content: '';
-    width: 176px;
-    height:15px ;
+    width: 48px;
+    height: 10px;
     position: absolute;
-    margin:40px 0 0 26%;
+    margin: 0 0 0 42%;
+  }
+.o0sec8>.box{
+    padding:1em;
+}
+.o0sec9{}
+.o0sec10{}
 
-    }
+
 .o0sec1a{}
 .o0sec2a{}
 .o0sec3a{}
@@ -3191,15 +3409,71 @@ o1acabamentoimagem
 o1contornoimagembranco
 o1zoomcontorno
 */
-.o1boxfundobranco{}
-.o1boxfundoazul1{}
+
+.o1boxfundobranco{
+    background: var(--branco);
+    padding: 1em;
+    clip-path: polygon(2% 0, 100% 0, 100% 90%, 98% 100%, 0 100%, 0 10%);
+}
+div.o1boxfundobranco{
+    margin: 1em 0;
+}
+p.o1boxfundobranco{
+    margin: 0.5em 0;
+}
+span.o1boxfundobranco{
+    margin: 0.5em 0;
+    padding: 0.2em 0.5em;
+}
+ul.o1boxfundobranco{
+    margin: 1em 0;
+    padding:1em 1.5em;
+}
+.o1boxfundoazul1{
+    background: var(--apoio3fnd);
+    padding: 1em;
+    clip-path: polygon(2% 0, 100% 0, 100% 90%, 98% 100%, 0 100%, 0 10%);
+}
+div.o1boxfundoazul1{
+    padding: 1em;
+    margin: 0.5em 0;
+}
+p.o1boxfundoazul1{
+    padding: 1em;
+    margin: 0.5em 0;
+}
+span.o1boxfundoazul1{
+    padding: 0.2em 0.5em;
+}
+ul.o1boxfundoazul1{
+    padding:1em 1.5em;
+    margin: 0.5em 0;
+}
 .o1boxfundoazul2{}
 .o1boxfundoroxo1{}
 .o1boxfundoroxo2{}
 .o1boxfundoamarelo1{}
 .o1boxfundolaranja1{}
 .o1boxfundolaranja2{}
-.o1boxfundoverde1{}
+.o1boxfundoverde1{
+    background: var(--apoio2Afnd);
+    padding: 1em;
+    clip-path: polygon(2% 0, 100% 0, 100% 90%, 98% 100%, 0 100%, 0 10%);
+}
+div.o1boxfundoverde1{
+    margin: 1em 0;
+}
+p.o1boxfundoverde1{
+    margin: 0.5em 0;
+}
+span.o1boxfundoverde1{
+    margin: 0.5em 0;
+    padding: 0.2em 0.5em;
+}
+ul.o1boxfundoverde1{
+    margin: 1em 0;
+    padding:1em 1.5em;
+}
 .o1boxfundoverde2{}
 .o1boxfundoturquesa1{}
 .o1boxfundoturquesa2{}
@@ -3230,17 +3504,26 @@ o2mapaescalabox
 o2graficobox
 o2esquemabox
 */
-.o2mapabox{}
+.o2mapabox{
+    display: table;
+    margin: 1em 0;
+}
+.o2mapabox>figure{
+    border: 1px solid var(--preto);
+    margin: 0 0 0 0;
+}
 .o2mapaescala{}
 .o2mapaescalabox{}
+
 .o2graficobox{
     display: table;
-  margin: 1em 0;
+    margin: 1em 0;
 }
 .o2graficobox>figure{
     border: 1px solid var(--preto);
     margin: 0 0 0 0;
 }
+
 .o2esquemabox{}
 
 /*👉O3: Jornal e Citação👈*/
@@ -3250,9 +3533,8 @@ o3fiocitacao
 o3fiovocabulario
 */
 .o3jornalfundo{
-    background: var(--cinza);
+    background: var(--jornal);
     padding: 1em;
-    border: 1px solid #A7ACA8;
     margin: 1em 0;
 }
 .o3fiocitacao{
@@ -3286,11 +3568,13 @@ o4balaopensamentobranco
 o4cuidadobox
 o4dicabox
 o4dicaboxnegativo
+o4ideiabox
 o4autorbox
 o4atencaobox
 o4conceitobox
 o4avaliacaobox
 o4vocabulariobox
+o4vocabularioboxbranco
 o4glossariobox
 o4etapabox
 o4exemplobox
@@ -3318,7 +3602,7 @@ content: '';
 width: 40px ;
 height:10px ;
 position: absolute;
-margin:18px 0 0 44% ;
+margin:18px 0 0 40% ;
 }
 .o4ficha{}
 p.o4ficha {
@@ -3506,21 +3790,93 @@ span.o4ficha2 {
     margin: 15px 0 0 40px;
 }
 .o4cuidadobox{
-    background: var(--cinza);
-    border-radius: 0.5em;
-    padding: 1em;
+   
     margin: 1em 0;
 }
-.o4dicabox{}
-.o4dicabox .p1box1tit{
-    background: var(--apoio1C);
+.o4cuidadobox .p1box1tit{
+    background: url(../images/bg_canto2.svg) top right no-repeat var(--apoio1C);
+    background-size: 12px;
     font-family: var(--titulo);
     font-weight: bold;
     font-size: var(--peso6);
-    padding: 0.4em 0.8em;
+    padding: 0.2em 0.8em;
     max-width: max-content;
+   
+}
+.o4cuidadobox .p1box1tit::before{
+background: url(../images/pv_dica.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 20px;
+height:20px ;
+position: absolute;
+margin:-2px 0 0 -35px ;
+}
+.o4dicabox{}
+.o4dicabox .p1box1tit{
+    background: url(../images/bg_canto2.svg) top right no-repeat var(--apoio1C);
+    background-size: 12px;
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--peso6);
+    padding: 0.2em 0.8em;
+    max-width: max-content;
+   
+}
+.o4dicabox .p1box1tit::before{
+background: url(../images/pv_dica.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 20px;
+height:20px ;
+position: absolute;
+margin:-2px 0 0 -35px ;
 }
 .o4dicaboxnegativo{}
+.o4ideiabox{
+    border-left:2px solid  var(--apoio1C);
+    border-bottom:2px solid  var(--apoio1C);
+}
+.o4ideiabox>.box {
+    padding: 1em;
+}
+.o4ideiabox .p1box1tit{
+    background:  var(--apoio1C);
+    background-size: 12px;
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--peso6);
+    padding: 0.2em 0.8em;
+    max-width: max-content;  
+}
+.o4ideiabox .p1box1tit::before{
+    background: url(../images/pv_boxideia1.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 17px ;
+    height:24px ;
+    position: absolute;
+    margin:-2px 0 0 -34px;
+}
+.o4ideiabox .p1box1tit::after{
+    background: url(../images/pv_boxideia2.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 17px ;
+    height:44px ;
+    position: absolute;
+    margin:-4px 0 0 14px;
+}
+.o4ideiabox::after{
+    background: url(../images/pv_saibamais.svg) no-repeat;
+      background-size: auto;
+    background-size: 100%;
+    content: '';
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    margin: 0px 0 0 41%;
+  }
 .o4autorbox{}
 .o4atencaobox{}
 .o4conceitobox{
@@ -3535,6 +3891,7 @@ span.o4ficha2 {
     padding: 1px 1em;
     margin: 1em 0;
 }
+.o4vocabularioboxbranco{}
 .o4glossariobox{}
 .o4etapabox{}
 .o4exemplobox{}
@@ -3574,6 +3931,7 @@ o5navegadorfundo
 o5verbetedicionario
 o5curriculo
 o5email
+o5emailrecorte
 o5email2
 o5trechopeca
 o5revista
@@ -3604,6 +3962,7 @@ o5redesocial2
 .o5verbetedicionario{}
 .o5curriculo{}
 .o5email{}
+.o5emailrecorte{}
 .o5email2{}
 .o5trechopeca{}
 .o5revista{}
@@ -3623,6 +3982,36 @@ o6fluxogramadecisao
 .o6fluxogramainiciofim{}
 .o6fluxogramaacao{}
 .o6fluxogramadecisao{}
+
+/*👉07: Estilos para Linha do tempo👈*/
+/* 
+o7linhatempocaixatexto
+o7linhatempodestaquedata
+o7linhatempolinhaeixo
+o7linhatempolinha1
+o7linhatempolinha2
+o7linhatempolinha3
+o7linhatempolinha4
+o7linhatempolinha5
+o7linhatempoperiodo1
+o7linhatempoperiodo2
+o7linhatempoperiodo3
+o7linhatempoperiodo4
+o7linhatempoperiodo5
+*/
+.o7linhatempocaixatexto{}
+.o7linhatempodestaquedata{}
+.o7linhatempolinhaeixo{}
+.o7linhatempolinha1{}
+.o7linhatempolinha2{}
+.o7linhatempolinha3{}
+.o7linhatempolinha4{}
+.o7linhatempolinha5{}
+.o7linhatempoperiodo1{}
+.o7linhatempoperiodo2{}
+.o7linhatempoperiodo3{}
+.o7linhatempoperiodo4{}
+.o7linhatempoperiodo5{}
 
 /*👉OE: Elementos vindos da editora👈*/
 /* 
