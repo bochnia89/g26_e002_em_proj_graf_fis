@@ -15,10 +15,11 @@ html {
 
 body {
     font-size: var(--pesoPadrao);
-    font-family: var(--oedtexto);
+    font-family: var(--texto);
     line-height: 1.5em;
     overflow-x: hidden;
     hyphens: none;
+
 }
 
 main {
@@ -59,12 +60,14 @@ figcaption.p4legenda {
     display: table-caption;
     caption-side: bottom;
     hyphens: none;
+    font-family: var(--texto);
 }
 
 figcaption.legenda2 {
     display: table-caption;
     caption-side: top;
     hyphens: none;
+    font-family: var(--texto);
 }
 
 p,
@@ -90,6 +93,41 @@ em {
 strong em {
     font-weight: bold;
     font-style: italic;
+}
+
+/*👉d3hyperlinkoed classe específica para aparência de urls en OEDs👈*/
+a.d3hyperlinkoed {
+    color: #053499;
+    font-size: var(--pesoPadrao);
+    text-decoration: underline;
+}
+
+a.d3hyperlinkoed:visited {
+    color: #4f0792;
+}
+
+a.d3hyperlinkoed:hover {
+    color: rgb(134, 0, 0);
+}
+
+.ocultatx, .ocultamn {
+    color: transparent;
+   }
+
+.ocultamn{
+    font-size: 0.3em;
+}
+
+.ocultatx {
+    font-size: 0.9em;
+}
+
+.hifen_ano{
+    margin-left: -8px;
+}
+
+.url_para_encurtar{
+    word-break: break-all;
 }
 
 /*👉CLASSES PARA DIAGRAMAR👈*/
@@ -130,206 +168,179 @@ strong em {
 
 /*👉Elementos gerais do OED👈*/
 
-.box_oed {
+.d3boxoed {
     padding: 1em 0;
 }
 
-.topo_oed {
+.d3topooed {
     display: flex;
     align-items: center;
 }
 
-.instrucao_oed {
+.d3instrucaooed {
     font-family: var(--oedinstrucao);
     padding: 1em;
     font-size: 0.9em;
     line-height: 1.1em;
+    hyphens: none;
 }
 
-.ti1_oed {
-    font-family: var(--oedtitulo);
-    font-size: 2.1em;
-    color: #007db8;
-    text-align: left;
-    border: 1px solid #f7f7f7;
-    border-radius: 0.5em 0.5em 0 0;
-    padding: 0.5em 1em;
-    width: max-content;
-    background: #f7f7f7;
+.d3tit1oed {
+    background: var(--fiscor1C);
+    font-family: var(--titulo);
+    font-size: var(--peso2);
     line-height: 1em;
-
+    text-align: center;
+    color: var(--preto);
+    width: max-content;
+    padding: 0.5em 1em;
+    clip-path: polygon(0 0.75em,0.75em 0,calc(100% - 0.75em) 0,100% 0.75em,100% 100%,0 100%);
 }
 
-.ti2_oed {
+
+.d3tit2oed {
     font-size: 1.3em;
+    font-family: var(--titulo);
     margin: 1em 0 0.5em 0;
     text-align: center;
 }
 
-.tx_oed {
+.d3txtoed {
     margin: 1em 0;
+    font-family: var(--texto);
     text-indent: 1.5em;
     text-align: justify;
     line-height: 1.5em;
+    font-size: var(--pesoPadrao);
 }
 
-.legenda_oed {
+/* classe específica para texto em pop up de infográfico e mapa clicável */
+.d3txtoedmapitem {}
+
+.d3legendaoed {
     margin: 0.5em 0;
+    font-family: var(--texto);
 }
 
-.tx_introducao_oed {
+.d3txinstrucaooed {
     margin: 0.5em 0 1em 0;
+    font-family: var(--texto);
     text-align: left;
-    font-size: 1em;
+    font-size: var(--pesoPadrao);
     text-indent: 1.5em;
     text-align: justify;
     line-height: 1.5em;
 }
 
-.conteudo_oed {
-    /*👉 border: 1px solid #e2e2e2;👈*/
+.d3conteudooed {
     padding: 1em 2em;
-    background: rgb(247, 247, 247);
+    background:
+    url(../images/bg_canto2.svg) top right no-repeat,
+    url(../images/bg_canto3.svg) bottom right no-repeat,
+    url(../images/bg_canto4.svg) bottom left no-repeat
+    var(--apoio1Afnd);
+    
 }
 
 .panorama {}
 
 .objeto {}
 
-.credito {
-    display: flex;
-    flex-direction: row-reverse;
+.d3credito {
+    /*👉display: flex;👈*/
+    /*👉flex-direction: row-reverse;👈*/
+    margin: 0.5em 0 0 0 ;
 }
 
 /*👉classes adicionadas para OED vídeo e áudio👈*/
-.oedVideo, .oedAudio{
+.d3oedvideo, .d3oedaudio{
     margin: 1em 0;
 }
 
-.rubrica_transcricao{
+.d3rubricatranscricao{
     font-weight: bold;
 }
 
-.tx_transcricao{
+.d3txtranscricao{
 
 }
 /*👉fim classes adicionadas para OED video👈*/
 
-.descricao_longaOED {
+.d3descricaolongaoed {
     border: 1px;
-    border-style: dashed;
     padding: 0.5em;
     margin: 0 0 0.5em 0;
-    color: #005177;
+    background: var(--branco);
+    box-shadow: 
+    5px 5px 0 0 var(--apoio1B);
 }
 
-.descricao_longaOED summary {
+.d3descricaolongaoed summary {
     font-weight: 600;
     cursor: pointer;
     padding: 0 0 0 2em;
 }
 
-.descricao_longaOED summary:hover {
-    background-color: #bedfee;
+.d3descricaolongaoed summary:hover {
+    background-color: var(--apoio1Afnd);
 }
 
-.descricao_longaOED summary::before {
+/*👉Versão geral👈*/
+.d3descricaolongaoed summary::before {
     background: url(../images/ico_acessibilidade.svg);
     background-size: 100%;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     position: absolute;
-    margin: -3px 0 0 -48px;
+    margin: 0 0 0 -48px;
     content: '';
 }
 
-.descricao_longaOED div {
+.d3descricaolongaoed div {
 
     text-align: justify;
     padding: 1em;
 }
 
-.descricao_longaOED div p {
+.d3descricaolongaoed div p {
     margin: 0.4em;
     text-indent: 1em;
 }
 
-
-.creditoimagemOED {
+.d3creditoimagemoed, .d3fontepesquisa{
     font-size: 0.9em;
+    text-align: right;
+    margin: 0.5em 0 0.5em 0;
 }
 
-.btn_voltar_oed {
+.d3btnvoltaroed {
     display: flex;
     flex-direction: row-reverse;
     margin: 1em 0;
 }
 
-.btn_voltar_oed a {
-    border: 1px solid #e2e2e2;
-    border-radius: 0.5em;
-    box-shadow: 4px 4px 4px rgba(182, 181, 181, 0.2);
+.d3btnvoltaroed a {
+    box-shadow: 4px 4px 4px rgba(182, 181, 181, 0.5);
     padding: 0.5em 1em;
-    background: #015a83;
-    color: #f7f7f7;
+    background: var(--fiscor1C);
+    color: var(--preto);
     font-weight: bold;
+    font-family: var(--titulo);
 }
 
-.btn_voltar_oed a:hover,
-.btn_voltar_oed a:focus {
+.d3btnvoltaroed a:hover,
+.d3btnvoltaroed a:focus {
     box-shadow: 2px 2px 4px rgba(182, 181, 181, 0.5);
     animation: 3s ease-in-out;
     animation-delay: 1000ms;
-    background: #012b3f;
+    color: var(--preto);
+    background: var(--fiscor2C);
 
 }
 
-
-.cor {
-    /*👉 color: #007db8;👈*/
+video{
+    max-width: 100%;
 }
-
-
-/*👉ESTILOS DIGITAL: OED Objetos Digitais👈*/
-/* 
-d3boxoed
-d3btnvoltaroed
-d3conteudooed
-d3credito
-d3descricaolongaoed
-d3fontepesquisa
-d3hyperlinkoed
-d3instrucaooed
-d3legendaoed
-d3oedaudio
-d3rubricatranscricao
-d3tit1oed
-d3tit2oed
-d3topooed
-d3txinstrucaooed
-d3txtoed
-d3txtoedmapitem
-d3txtranscricao
-*/
-.d3boxoed{}
-.d3btnvoltaroed{}
-.d3conteudooed{}
-.d3credito{}
-.d3descricaolongaoed{}
-.d3fontepesquisa{}
-.d3hyperlinkoed{}
-.d3instrucaooed{}
-.d3legendaoed{}
-.d3oedaudio{}
-.d3rubricatranscricao{}
-.d3tit1oed{}
-.d3tit2oed{}
-.d3topooed{}
-.d3txinstrucaooed{}
-.d3txtoed{}
-.d3txtoedmapitem{}
-.d3txtranscricao{}
-
 
 /*MEDIA QUERY*/
 /*👉Versão Mobile Cel👈*/
@@ -338,7 +349,7 @@ d3txtranscricao
         margin: 1em;
     }
 
-    .topo_oed {
+    .d3topooed {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -350,7 +361,12 @@ d3txtranscricao
         flex-direction: column;
         justify-content: center;
  
-    }    
+    }  
+    
+    .d3tit1oed{
+        background-position-y: -20px;
+       max-width:98%;
+    }
 }
 
 /*👉Versão Mobile tablet👈*/

@@ -68,7 +68,6 @@ a{
     cursor:pointer;
     margin: 1em 0 0 0;
     float:right;
-    border-radius: 0.5em;
   }
   
   .btn:hover{
@@ -165,7 +164,7 @@ a{
       content: "";
       position: absolute;
       top: 50%;
-      left: -16px;
+      left: -14px;
       margin-top: -16px;
       width: 0;
       height: 0;

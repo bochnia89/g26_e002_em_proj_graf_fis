@@ -15,8 +15,7 @@
     cursor: pointer;
     color: transparent;
     border: none;
-    background-color: #e0e0e0;
-    border-radius:10px;
+    background-color: var(--branco);
     
 } 
 

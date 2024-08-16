@@ -669,10 +669,10 @@
     --fonema: ;
     --pvnum: 'Audiowide';
 
-    --oedtitulo:;
-    --oedtexto:;
-    --oedcitacao:;
-    --oedinstrucao:;
+    --oedtitulo:'Barlow';
+    --oedtexto:'Work Sans';
+    --oedcitacao:'Noto Serif';
+    --oedinstrucao:'Work Sans';
 
     /* Tamanhos */
     --peso1: 1.8em;
