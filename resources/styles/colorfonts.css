@@ -702,7 +702,7 @@
     --apoio1Afnd:#FFE8B6; 
     --apoio1A:#FBBA00; 
     --apoio1B:#F39200;
-    --apoio1Bfnd:#FEE0BC;
+    --apoio1Bfnd:#FFE9C0;
     --apoio1C:#EA5B0C; 
     --apoio2Afnd:#EDF1C6;
     --apoio2A:#C8D400;
@@ -710,13 +710,15 @@
     --apoio2C:#3AAA35;
     --apoio3fnd:#D5ECF4;
     --apoio3A:#89CCCA; 
-    --apoio3B2:#2DB8C5;    
-    --apoio3C2:#0099B2;
-    
-    --apoio3B:#9F377E;
-    --apoio3C:#643780;
-    --apoio4A:#5BC5F2;
-    --apoio4B:#00A7E7;
+    --apoio3B:#2DB8C5; 
+    --apoio3C:#0099B2; 
+    --apoio4A:#E8DDEF;  
+    --apoio4B:#8B4A97; 
+    --apoio4C:#6E368C; 
+
+    --apoioExtra1:#0099B2;
+    --apoioExtra2:#643780;
+    --apoioExtra3:#00A7E7;
 
     --fiscor1A:#00A68D;
     --fiscor1B:#00827F;

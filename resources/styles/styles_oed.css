@@ -186,7 +186,7 @@ a.d3hyperlinkoed:hover {
 }
 
 .d3tit1oed {
-    background: var(--fiscor1C);
+    background: var(--ingcor1D);
     font-family: var(--titulo);
     font-size: var(--peso2);
     line-height: 1em;
@@ -214,6 +214,7 @@ a.d3hyperlinkoed:hover {
     font-size: var(--pesoPadrao);
 }
 
+
 /* classe específica para texto em pop up de infográfico e mapa clicável */
 .d3txtoedmapitem {}
 
@@ -238,7 +239,7 @@ a.d3hyperlinkoed:hover {
     url(../images/bg_canto2.svg) top right no-repeat,
     url(../images/bg_canto3.svg) bottom right no-repeat,
     url(../images/bg_canto4.svg) bottom left no-repeat
-    var(--apoio1Afnd);
+    var(--apoio1B);
     
 }
 
@@ -303,8 +304,8 @@ a.d3hyperlinkoed:hover {
 }
 
 .d3descricaolongaoed div p {
-    margin: 0.4em;
-    text-indent: 1em;
+    margin: 0.4em 0;
+    text-indent: 0em;
 }
 
 .d3creditoimagemoed, .d3fontepesquisa{
@@ -340,6 +341,12 @@ a.d3hyperlinkoed:hover {
 
 video{
     max-width: 100%;
+}
+
+.d3vinheta{
+    font-style: italic;
+    text-indent: 0em !important;
+    margin:1em 0 !important;
 }
 
 /*MEDIA QUERY*/
